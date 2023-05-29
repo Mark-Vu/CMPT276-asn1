@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="histogram.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="lower-bounds">
+        <div class="header">
+          <h2>Lower bounds</h2>
+        </div>
+        <table class="bounds">
+          <tr>
+            <td>Max</td>
+            <td><input type="text" value="100" id="maxBound" /></td>
+          </tr>
+          <tr>
+            <td>A+</td>
+            <td><input type="text" value="95.00" id="A+Bound" /></td>
+          </tr>
+          <tr>
+            <td>A</td>
+            <td><input type="text" value="90.00" id="ABound" /></td>
+          </tr>
+          <tr>
+            <td>A-</td>
+            <td><input type="text" value="85.00" id="A-Bound" /></td>
+          </tr>
+          <tr>
+            <td>B+</td>
+            <td><input type="text" value="80.00" id="B+Bound" /></td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><input type="text" value="75.00" id="BBound" /></td>
+          </tr>
+          <tr>
+            <td>B-</td>
+            <td><input type="text" value="70.00" id="B-Bound" /></td>
+          </tr>
+          <tr>
+            <td>C+</td>
+            <td><input type="text" value="65.00" id="C+Bound" /></td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td><input type="text" value="60.00" id="CBound" /></td>
+          </tr>
+          <tr>
+            <td>C-</td>
+            <td><input type="text" value="55.00" id="C-Bound" /></td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td><input type="text" value="50.00" id="DBound" /></td>
+          </tr>
+          <tr>
+            <td>F</td>
+            <td><input type="text" value="0.00" id="FBound" /></td>
+          </tr>
+        </table>
+        <div class="footer">
+          <button type="submit" id="boundSubmitBtn">Save</button>
+          <span id="saveStatus" class="save-status">Saved</span>
+        </div>
+      </div>
+      <div class="histogram">
+        <div class="top">
+          <div class="header">
+            <h2>Histogram</h2>
+          </div>
+          <div class="histogram-bounds">
+            <div class="hist-value-container">
+              <div class="hist-left">A+</div>
+              <div class="bar APlusBar" id="A+BAR"></div>
+            </div>
+            <div class="hist-value-container">
+              <div class="hist-left">A</div>
+              <div class="bar ABar" id="ABAR"></div>
+            </div>
+            <div class="hist-value-container">
+              <div class="hist-left">A-</div>
+              <div class="bar AMinusBar" id="A-BAR"></div>
+            </div>
+            <div class="hist-value-container">
+              <div class="hist-left">B+</div>
+              <div class="bar BPlusBar" id="B+BAR"></div>
+            </div>
+            <div class="hist-value-container">
+              <div class="hist-left">B</div>
+              <div class="bar BBar" id="BBAR"></div>
+            </div>
+            <div class="hist-value-container">
+              <div class="hist-left">B-</div>
+              <div class="bar BMinusBar" id="B-BAR"></div>
+            </div>
+            <div class="hist-value-container">
+              <div class="hist-left">C+</div>
+              <div class="bar CPlusBar" id="C+BAR"></div>
+            </div>
+            <div class="hist-value-container">
+              <div class="hist-left">C</div>
+              <div class="bar CBar" id="CBAR"></div>
+            </div>
+            <div class="hist-value-container">
+              <div class="hist-left">C-</div>
+              <div class="bar CMinusBar" id="C-BAR"></div>
+            </div>
+            <div class="hist-value-container">
+              <div class="hist-left">D</div>
+              <div class="bar DBar" id="DBAR"></div>
+            </div>
+            <div class="hist-value-container">
+              <div class="hist-left">F</div>
+              <div class="bar FBar" id="FBAR"></div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="input-grade">
+            <label>New grade: </label>
+            <input type="text" id="newGradeInput" >
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
