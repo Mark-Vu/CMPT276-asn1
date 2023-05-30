@@ -28,6 +28,8 @@ body {
     display: flex;
     flex-direction: column;
     border-radius: 1% 1%;
+    overflow-y:auto;
+    overflow-x: hidden;
 }
 
 .histogram {
